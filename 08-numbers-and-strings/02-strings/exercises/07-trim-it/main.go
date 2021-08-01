@@ -10,6 +10,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 // ---------------------------------------------------------
@@ -26,14 +27,14 @@ import (
 // ---------------------------------------------------------
 
 func main() {
-	msg := `
+	msg := strings.TrimSpace(`
 	
 	The weather looks good.
 I should go and play.
 
 
 
-	`
+	`)
 
 	fmt.Println(msg)
 }
